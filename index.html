@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Responsive Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-side">
+            <h1>Playlist <i class="bi bi-music-note-beamed"></i></h1>
+            <div class="playlist">
+                <h4 data-song="0">
+                    <img src="./image/astro.png" alt="track cover">
+                    <span class="song-title">Astronaut in the Ocean</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="1">
+                    <img src="./image/heeriye.png" alt="track cover">
+                    <span class="song-title">Heeriye</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="2">
+                    <img src="./image/kasoor.png" alt="track cover">
+                    <span class="song-title">Kasoor</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="3">
+                    <img src="./image/moonlight.png" alt="track cover">
+                    <span class="song-title">Moonlight</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="4">
+                    <img src="./image/pahado.png" alt="track cover">
+                    <span class="song-title">Pahadon Mein</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="5">
+                    <img src="./image/pal.png" alt="track cover">
+                    <span class="song-title">Pal Behta Jaye</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="6">
+                    <img src="./image/water.png" alt="track cover">
+                    <span class="song-title">Water
+                    </span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="7">
+                    <img src="./image/withyou.png" alt="track cover">
+                    <span class="song-title">With You</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="8">
+                    <img src="./image/shaky.png" alt="track cover">
+                    <span class="song-title">Shaky</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="9">
+                    <img src="./image/waalian.png" alt="track cover">
+                    <span class="song-title">Waalian</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                <h4 data-song="10">
+                    <img src="./image/unstoppable.png" alt="track cover">
+                    <span class="song-title">Unstoppable</span>
+                    <i class="bi bi-play-circle-fill play-btn"></i>
+                </h4>
+                
+            </div>
+        </div>
+
+        <div class="song-side">
+            <div class="now-playing">
+                <img id="poster" src="image/astro.png" alt="Current Song" />
+                <h2 id="song-name">Astronaut in the Ocean</h2>
+                <p id="artist-name">Masked Wolf</p>
+
+                <button id="like-btn" class="like-btn"><i class="bi bi-heart"></i></button>
+                <div class="wave-bars">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="#" class="nav-item active" id="home-btn">
+                <i class="bi bi-house-fill"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item" id="playlist-btn">
+                <i class="bi bi-music-note-list"></i>
+                <span>Playlist</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="playlist-overlay" id="playlist-overlay">
+        <div class="playlist-header">
+            <h1>Playlist <i class="bi bi-music-note-beamed"></i></h1>
+            <button class="close-btn" id="close-playlist">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="playlist" id="mobile-playlist">
+            <!-- Mobile playlist items will be dynamically generated here -->
+        </div>
+    </div>
+
+    <div class="play">
+        <div class="controls">
+            <button class="btn btn-light" id="previous"><i class="bi bi-skip-start-fill"></i></button>
+            <button class="btn btn-light" id="playy"><i class="bi bi-play-fill" id="play"></i></button>
+            <button class="btn btn-light" id="next"><i class="bi bi-skip-end-fill"></i></button>
+        </div>
+
+        <div class="progress-container">
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="total-time">0:00</span>
+            </div>
+            <input type="range" class="progress-bar" id="progress-bar" value="0" max="100">
+        </div>
+
+        <div class="volume-container">
+            <button class="btn btn-dark" id="volume-btn"><i class="bi bi-volume-up-fill" id="volume-icon"></i></button>
+            <input type="range" class="volume-bar" id="volume-bar" value="50" max="100">
+        </div>
+    </div>
+    <audio id="audio-player" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
