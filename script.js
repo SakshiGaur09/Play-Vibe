@@ -275,6 +275,19 @@ window.onload = async function() {
       searchSongs(searchText);
     }
   };
+//mobile search functionality
+  document.getElementById("mobile-search-btn").onclick = function (e) {
+  e.preventDefault();
+  const searchText = document.getElementById("mobile-search-input").value;
+  searchSongs(searchText);
+};
+document.getElementById("mobile-search-input").onkeypress = function(e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const searchText = this.value;
+    searchSongs(searchText);
+  }
+};
   
   audio.ontimeupdate = updateProgress;
   
