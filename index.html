@@ -12,7 +12,18 @@
     <header>
         <div class="menu-side">
             <h1>Playlist <i class="bi bi-music-note-beamed"></i></h1>
-            <div class="playlist">
+              <div class="search-barr">
+                  <input type="text" id="search-bar" placeholder="Search by song or artist..." />
+                    <button id="search-btn">Search</button>
+              <div class="playlist" id="desktop-playlist"></div>
+                    <h2>Favourites <i class="bi bi-heart-fill"></i></h2>
+<div class="favourite-list" id="favourite-list">
+    <!-- Favorite songs will be displayed here dynamically -->
+</div>
+
+                </div>
+
+            <div class="playlist" >
                 <h4 data-song="0">
                     <img src="./image/astro.png" alt="track cover">
                     <span class="song-title">Astronaut in the Ocean</span>
@@ -74,12 +85,16 @@
         </div>
 
         <div class="song-side">
+            
             <div class="now-playing">
                 <img id="poster" src="image/astro.png" alt="Current Song" />
                 <h2 id="song-name">Astronaut in the Ocean</h2>
                 <p id="artist-name">Masked Wolf</p>
-
+                <div class="buttons">
                 <button id="like-btn" class="like-btn"><i class="bi bi-heart"></i></button>
+                 <button id="shuffle"><i class="bi bi-shuffle"></i></button>
+                </div>
+
                 <div class="wave-bars">
                     <span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
@@ -101,6 +116,13 @@
     </div>
     
     <div class="playlist-overlay" id="playlist-overlay">
+        <div class="mobile-favourites">
+    <h2>Favourites <i class="bi bi-heart-fill"></i></h2>
+    <div class="favourite-list" id="mobile-favourite-list">
+        <!-- Mobile favorites will be dynamically populated -->
+    </div>
+</div>
+
         <div class="playlist-header">
             <h1>Playlist <i class="bi bi-music-note-beamed"></i></h1>
             <button class="close-btn" id="close-playlist">
