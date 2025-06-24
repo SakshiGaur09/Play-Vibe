@@ -1,0 +1,70 @@
+{
+  "songs": [
+    {
+      "title": "Astronaut in the Ocean",
+      "artist": "Masked Wolf",
+      "audio": "audio/Astronaut-In-The-Ocean.mp3",
+      "cover": "image/astro.png"
+    },
+    {
+      "title": "Heeriye",
+      "artist": "Jasleen Royal",
+      "audio": "audio/Heeriye.mp3",
+      "cover": "image/heeriye.png"
+    },
+    {
+      "title": "Kasoor",
+      "artist": "Prateek Kuhad",
+      "audio": "audio/Kasoor_Prateek_Kuhad.mp3",
+      "cover": "image/kasoor.png"
+    },
+    {
+      "title": "Moonlight",
+      "artist": "Kali Uchis",
+      "audio": "audio/Moonlight.mp3",
+      "cover": "image/moonlight.png"
+    },
+    {
+      "title": "Pahadon Mein",
+      "artist": "Prabh Gill",
+      "audio": "audio/Pahado_Mein.mp3",
+      "cover": "image/pahado.png"
+    },
+    {
+      "title": "Pal Behta Jaye",
+      "artist": "Vishmay",
+      "audio": "audio/Pal_Behta_Jaaye.mp3",
+      "cover": "image/pal.png"
+    },
+    {
+      "title": "Water",
+      "artist": "Diljit Dosanjh",
+      "audio": "audio/Water.mp3",
+      "cover": "image/water.png"
+    },
+    {
+      "title": "With You",
+      "artist": "AP Dhillon",
+      "audio": "audio/WithYou.mp3",
+      "cover": "image/withyou.png"
+    },
+    {
+      "title": "Shaky",
+      "artist": "Sanju Rathore",
+      "audio": "audio/Shaky.mp3",
+      "cover": "image/shaky.png"
+    },
+    {
+      "title": "Waalian",
+      "artist": "Harnoor",
+      "audio": "audio/Waalian.mp3",
+      "cover": "image/waalian.png"
+    },
+    {
+      "title": "Unstoppable",
+      "artist": "Sia",
+      "audio": "audio/Unstoppable.mp3",
+      "cover": "image/unstoppable.png"
+    }
+  ]
+}
